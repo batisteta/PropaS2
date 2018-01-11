@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>MenuProjetSI6</title>
+</head>
+<body>
+	<h1>Bienvenue sur le site de Maxence et Baptiste</h1>
+		 
+	
+	<ul>
+		<li>
+			Page principale du projet
+		</li>
+		<li>
+			Propagande sur la viande le lait et les oeufs
+		</li>
+	</ul>
+</body>
+</html>
