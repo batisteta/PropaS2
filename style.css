@@ -1,0 +1,23 @@
+#navigation li {
+ display: inline;
+}
+
+#navigation li a {
+  display: block ;
+  background: #c00 ;
+  color: #fff ;
+  font: 1em "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+  padding: 4px 0 ;
+}
+
+#navigation li a:hover, #navigation li a:focus, #navigation li a:active {
+  background: #900 ;
+  text-decoration: underline ;
+}
+
+body {
+	background-image: url(C:\Users\DEME\Desktop\pic06.jpg);
+}
