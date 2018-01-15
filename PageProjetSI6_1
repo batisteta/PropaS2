@@ -6,15 +6,12 @@
 </head>
 <body>
 	<h1>Bienvenue sur le site de Maxence et Baptiste</h1>
-		 
-	
-	<ul>
-		<li>
-			Page principale du projet
-		</li>
-		<li>
-			Propagande sur la viande le lait et les oeufs
-		</li>
-	</ul>
+		<ul id="navigation">
+  		<li><a href="#" title="aller à la section 1">item1</a></li>
+  		<li><a href="#" title="aller à la section 2">item2</a></li>
+  		<li><a href="#" title="aller à la section 3">item3</a></li>
+  		<li><a href="#" title="aller à la section 4">item4</a></li>
+  		<li><a href="#" title="aller à la section 5">item5</a></li>
+</ul>
 </body>
 </html>
