@@ -38,16 +38,16 @@
 
 		#Accueil {background-color: red;}
 		#LesBienfaitsDeLaViande {background-color: green;}
-		#ContactezNous {background-color: blue;}
-		#SeConnecter {background-color: orange;}
+		#NosVideos{background-color: blue;}
+		#Adhérer {background-color: orange;}
 		</style>
 	</head>
 <body>
 
 	<button class="tablink" onclick="openPage('Accueil', this, 'red')">Accueil</button>
 	<button class="tablink" onclick="openPage('LesBienfaitsDeLaViande', this, 'green')" id="defaultOpen">Les bienfaits de la viande</button>
-	<button class="tablink" onclick="openPage('ContactezNous', this, 'blue')">ContactezNous</button>
-	<button class="tablink" onclick="openPage('SeConnecter', this, 'orange')">SeConnecter</button>
+	<button class="tablink" onclick="openPage('NosVideos', this, 'blue')">NosVideos</button>
+	<button class="tablink" onclick="openPage('Adhérer', this, 'orange')">Adhérer</button>
 
 		<div id="Accueil" class="tabcontent">
 			<h3>Accueil</h3>
@@ -55,9 +55,8 @@
 		</div>
 
 		<div id="LesBienfaitsDeLaViande" class="tabcontent">
-			<title>Les Bienfaits de la viande</title>
+			<center><h1>Les Bienfaits de la viande</h1></center>
 				<body background="">
-					<h1>Les bienfaits de la viande.</h1>
 						<center> <img src="viande.JFIF" alt="Un steack"> </center>
 		
 						<center> <p>La viande occupe une place centrale dans notre alimentation : <br />
@@ -65,22 +64,30 @@
 									elle est liée à des moments de plaisir et de fête, en famille ou entre amis.
 									<br />Mais la viande joue également un rôle prédominant dans l’équilibre alimentaire,<br />
 									grâce à sa grande richesse en éléments essentiels à la croissance et au maintien en bonne santé.<br /></p>
-								<p> <font color="red">Si vous êtes intéressés par des informations plus poussées sur la viande, vous pouvez cliquer sur le lien ci-dessous:</font></p> </center>
+								<p> <font color="blue">Si vous êtes intéressés par des informations plus poussées sur la viande, vous pouvez cliquer sur le lien ci-dessous:</font></p> </center>
 						<center> <a href="https://www.bigard.fr/fr/bienfaits-de-la-viande.html">La viande, c'est bon!</a></center>
 
 				</body>
 		</div>		
 
-		<div id="ContactezNous" class="tabcontent">
-			<h3>Nous contacter</h3>
-				<p></p>
+		<div id="NosVideos" class="tabcontent">
+			<center><video width="400" controls>
+			<source src="VideoViande.mp4" type="video/mp4">
+			<source src="videoViande.ogg" type="video/ogg">
+			Votre navigateur ne supporte pas le format vidéo.
+			</video></center>
 		</div>
 
-		<div id="SeConnecter" class="tabcontent">
-			<h3></h3>
-				<p></p>
-		</div>
+		<div id="Adhérer" class="tabcontent">
+			<center><form action="/action_page.php" accept="image/gif, image/jpeg">
+				Prénom: <input type="text" name="fname"><br>
+				Nom: <input type="text" name="lname"><br>
+				Votre logo: <input type="file" name="pic" id="pic"><br>
+							<input type="submit" value="Submit">
+			</form></center>
 
+		</div>
+		
 	<script>
 		function openPage(pageName,elmnt,color) {
 			var i, tabcontent, tablinks;
@@ -99,4 +106,4 @@
 	</script>
      
 </body>
-</html>
+</html> 
