@@ -1,71 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<link rel="stylesheet" href="style.css" />
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<title>Menu</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
 	</head>
-<body>
-
-	<button class="tablink" onclick="openPage('Accueil', this, 'red')">Accueil</button>
-	<button class="tablink" onclick="openPage('LesBienfaitsDeLaViande', this, 'green')" id="defaultOpen">Les bienfaits de la viande</button>
-	<button class="tablink" onclick="openPage('NosVideos', this, 'blue')">NosVideos</button>
-	<button class="tablink" onclick="openPage('Adhérer', this, 'orange')">Adhérer</button>
-
-		<div id="Accueil" class="tabcontent">
-			<h3>Accueil</h3>
-				<p></p>
-		</div>
-
-		<div id="LesBienfaitsDeLaViande" class="tabcontent">
-			<center><h1>Les Bienfaits de la viande</h1></center>
-				<body background="">
-						<center> <img src="viande.JFIF" alt="Un steack"> </center>
-		
-						<center> <p>La viande occupe une place centrale dans notre alimentation : <br />
-									entrant dans la préparation de multiples recettes des plus traditionnelles aux plus actuelles,<br />
-									elle est liée à des moments de plaisir et de fête, en famille ou entre amis.
-									<br />Mais la viande joue également un rôle prédominant dans l’équilibre alimentaire,<br />
-									grâce à sa grande richesse en éléments essentiels à la croissance et au maintien en bonne santé.<br /></p>
-								<p> <font color="blue">Si vous êtes intéressés par des informations plus poussées sur la viande, vous pouvez cliquer sur le lien ci-dessous:</font></p> </center>
-						<center> <a href="https://www.bigard.fr/fr/bienfaits-de-la-viande.html">La viande, c'est bon!</a></center>
-
-				</body>
-		</div>		
-
-		<div id="NosVideos" class="tabcontent">
-			<center><video width="400" controls>
-			<source src="VideoViande.mp4" type="video/mp4">
-			<source src="videoViande.ogg" type="video/ogg">
-			Votre navigateur ne supporte pas le format vidéo.
-			</video></center>
-		</div>
-
-		<div id="Adhérer" class="tabcontent">
-			<center><form action="/action_page.php" accept="image/gif, image/jpeg">
-				Prénom: <input type="text" name="fname"><br>
-				Nom: <input type="text" name="lname"><br>
-				Votre logo: <input type="file" name="pic" id="pic"><br>
-							<input type="submit" value="Submit">
-			</form></center>
-
-		</div>
-		
-	<script>
-		function openPage(pageName,elmnt,color) {
-			var i, tabcontent, tablinks;
-				tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
-			}
-				tablinks = document.getElementsByClassName("tablink");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].style.backgroundColor = "";
-			}
-				document.getElementById(pageName).style.display = "block";
-				elmnt.style.backgroundColor = color;
-			}
-			document.getElementById("defaultOpen").click();
-	</script>
-     
-</body>
-</html> 
+	<body>
+		<nav>
+			<ul> 
+				<li class="menu-accueil"><a href="accueil.php">Accueil</a></li>
+				<li class="menu-NosVideos"><a href="NosVideos.php">Tout Savoir</a>
+					<ul class="submenu">
+						<li><a href="NosVideos.php">Tout savoir en video!</a></li>
+						<li><a href="Viandephp">Tout savoir en image!</a></li>
+					</ul></li>
+				<li class="menu-contact"><a href="Contact.php">Nous contacter</a></li>
+			</ul>
+		</nav>
+	</body>
+</html>
