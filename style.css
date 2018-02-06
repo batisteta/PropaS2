@@ -1,38 +1,94 @@
+body{
+	font-family: 'Source code pro', Calibri, serif;
+	margin: 0px;
+	padding: 0px;
+}
 
-			* {box-sizing: border-box}
-			/* Set height of body and the document to 100% */
-			body, html {
-			height: 100%;
-			margin: 0;
-			font-family: Arial;
-			}
+nav{
+	width: 100%;
+	background-color: #424558;
+}
 
-			/* Style tab links */
-			.tablink {
-			background-color: #555;
-			color: white;
-			float: left;
-			border: none;
-			outline: none;
-			cursor: pointer;
-			padding: 14px 16px;
-			font-size: 17px;
-			width: 25%;
-			}
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
 
-			.tablink:hover {
-			background-color: #777;
-			}
+nav > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
 
-			/* Style the tab content (and add height:100% for full page content) */
-			.tabcontent {
-			color: white;
-			display: none;
-			padding: 100px 20px;
-			height: 100%;
-			}
+nav > ul > li{
+	float: left;
+	position: relative;
+}
 
-		#Accueil {background-color: red;}
-		#LesBienfaitsDeLaViande {background-color: green;}
-		#NosVideos{background-color: blue;}
-		#Adhérer {background-color: orange;}
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+.submenu{
+	display: none;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+
+.submenu li{
+	border-bottom: 1px solid #CCC;
+}
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #222538;
+	width: 270px;
+}
+
+.menu-accueil:hover{
+	border-top: 5px solid #e44d26;
+	background-color: RGBo(228, 77, 38, 0.15);
+}
+
+.menu-NosVideos:hover{
+	border-top: 5px solid #0070bb;
+	background-color: RGBo(000, 112, 192, 0.15);
+}
+
+.menu-contact:hover{
+	border-top: 5px solid #f1dc4f;
+	background-color: RGBo(241, 211, 79, 0.15);
+}
+
+.menu-NosVideos .submenu{
+	background-color: RGB(000, 160, 240);
+}
+
+.submenu li:hover a{
+	color: #EEE;
+	font-weight: bold;
+}
+
+.menu-NosVideos .submenu{
+	background-color: RGB(000, 115, 200);
+}
